@@ -39,7 +39,7 @@ foreach ($carts as $item){
         <img src="/images/icons/search_white.svg">
     </button>
     <a href="" class="img">
-        <img src="@if($product->associatedModel->image) /storage/{{$product->associatedModel->image}} @else/images/default.jpg @endif">
+        <img alt="{{$product->name}}" src="@if($product->associatedModel->image) /storage/{{$product->associatedModel->image}} @else/images/default.jpg @endif">
     </a>
     <a href="{{route('product', $product->associatedModel->slug)}}">
         <h4 class="title">{{$product->name??''}}</h4>

@@ -10,7 +10,7 @@
 	   	@endforeach
    	@endif
 	<li>
-		<a href="/" class="link">
+		<a href="" class="link">
 			{{ $name }}
 		</a>
 	</li>

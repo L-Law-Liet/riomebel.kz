@@ -40,7 +40,7 @@ foreach ($carts as $item){
         <img src="{{asset('images/icons/search_white.svg')}}">
     </button>
     <a href="{{url('product', $product->slug)}}" class="img">
-        <img class="lazy horizContainer"
+        <img class="lazy horizContainer" alt="{{$product->name}}"
              src="@if($product->resized_image){{asset('storage/'.$product->resized_image)}}@else/images/default.jpg @endif">
     </a>
     <a href="{{url('product', $product->slug)}}">

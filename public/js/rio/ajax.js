@@ -50,6 +50,14 @@ $(document).ready(function () {
         e.preventDefault();
         let page = $(this).attr('href').split('page=')[1];
         console.log(page);
+
+        let ref = document.location+"";
+        let param = ref.
+        slice(0, -parseInt(document.location.search.
+        substring(document.location.search.
+        lastIndexOf("=")+1).length))+page;
+        window.history.pushState("object or string", "Title", param);
         ajaxFilter(3, page);
+
     });
 });

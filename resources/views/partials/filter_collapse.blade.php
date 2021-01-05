@@ -14,6 +14,10 @@
                                     <label onclick="window.location='{{url('category', [$category->slug, $subcategory->slug])}}'" class="custom-control-label" for="credit">{{$subcategory->name}}</label>
                                 </div>
                         @endforeach
+                            <div class="custom-control custom-radio">
+                                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                                <label onclick="window.location='{{url('category', $category->slug)}}'" class="custom-control-label" for="credit">Все товары в категории "{{$category->name}}"</label>
+                            </div>
                         </div>
                     </div>
                 </li>

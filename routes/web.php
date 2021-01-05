@@ -52,7 +52,7 @@ Route::group(['prefix' => 'checkout'], function () {
     Route::post('pickup', 'CheckoutController@pickup')->name('formPickup');
 });
 Route::get('artisan-link', function (){
-   Artisan::call('storage:link'); 
+   Artisan::call('storage:link');
 });
 Route::get('/checkout', 'CheckoutController@checkout')->name('checkout');
 Route::get('/check-payment', 'CheckoutController@checkPayment')->name('check-payment');

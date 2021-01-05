@@ -24,6 +24,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+
+        $seo = \App\Seo::where('url', \Illuminate\Support\Facades\Request::path())->first();
+        view()->share('seo', $seo);
         Builder::defaultStringLength(191);
     }
 }

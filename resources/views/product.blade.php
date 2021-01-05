@@ -18,7 +18,7 @@
         }
     @endphp
 	<div class="container">
-		@include('partials.breadcrumbs', ['name' => "$product->name", 'ancestors' => null])
+		@include('partials.breadcrumbs', ['name' => "$product->name", 'ancestors' => $ancestors])
 
 		<div class="row">
 			<div class="col-12 col-md-12">
@@ -50,7 +50,7 @@
               @if($product->images)
                     @foreach($product->images as $image)
                         <figure>
-                            <div class="img"><img src="@if($image){{asset('storage/'.$image)}}@else /images/default.jpg @endif" alt="One"></div>
+                            <div class="img"><img src="@if($image){{asset('storage/'.$image)}}@else /images/default.jpg @endif" alt="{{$product->name}}"></div>
                         </figure>
                     @endforeach
                   @else
@@ -65,7 +65,7 @@
                 @if($product->images)
                     @foreach($product->images as $image)
                         <div>
-                            <div class="img"><img src="@if($image){{asset('storage/'.$image)}}@else /images/default.jpg @endif" alt="One"></div>
+                            <div class="img"><img src="@if($image){{asset('storage/'.$image)}}@else /images/default.jpg @endif" alt="{{$product->name}}"></div>
                         </div>
                     @endforeach
                 @else

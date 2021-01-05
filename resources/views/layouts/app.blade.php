@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{$title??setting('site.title')}}</title>
-    <meta name="description" content="{{ strip_tags((isset($description)) ? $description : setting('site.description')) }}">
-    <meta name="keywords" content="{{ setting('site.keyword') }}">
+    <title>{{$seo->title??$seo_title??$title??setting('site.title')}}</title>
+    <meta name="description" content="{{$seo->description??strip_tags((isset($description)) ? $description : setting('site.description')) }}">
+    <meta name="keywords" content="{{$seo->keywords??setting('site.keyword') }}">
     <link rel="icon" type="image/png" href="{{ asset("storage/". setting('site.logo')) }}">
     <!-- fonts -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
@@ -16,10 +16,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="{{ asset('css/slick.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <script
-        src="https://code.jquery.com/jquery-3.5.1.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-        crossorigin="anonymous"></script>
 
  </head>
 @php
@@ -40,6 +36,10 @@
     @include('partials.modal_products')
     @include('partials.modal_city')
 
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
     <!-- js -->
     <script
         src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"

@@ -1,13 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="265dd9a9-b3ab-44d7-ac02-1e818b130411" name="Default Changelist" comment="" />
+    <list default="true" id="265dd9a9-b3ab-44d7-ac02-1e818b130411" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/SubCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SubCategory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/rio/ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/rio/ajax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/box.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/box.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/basket.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/basket.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/box_lists.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/box_lists.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/breadcrumbs.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/breadcrumbs.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/filter_collapse.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/filter_collapse.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/modal_content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/modal_content.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/product_card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/product_card.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/product_wishlist.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/product_wishlist.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -161,12 +182,18 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../studypage.kz" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\OpenServer\domains\nidge\rio\public" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -182,7 +209,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609519823631</updated>
-      <workItem from="1609519825588" duration="2654000" />
+      <workItem from="1609519825588" duration="17415000" />
+      <workItem from="1609588605230" duration="1780000" />
+      <workItem from="1609821929034" duration="620000" />
+      <workItem from="1609823236072" duration="732000" />
+      <workItem from="1609833890265" duration="2219000" />
+      <workItem from="1609839021251" duration="767000" />
+      <workItem from="1609865663208" duration="5980000" />
     </task>
     <servers />
   </component>
@@ -199,5 +232,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

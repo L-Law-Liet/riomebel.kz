@@ -1,2 +1,15 @@
 User-agent: *
-Disallow:
+Disallow: /admin/
+Disallow: /search
+Disallow: /*gclid=*
+User-agent: Googlebot
+Disallow: /admin/
+Disallow: /search
+Disallow: /*gclid=*
+User-agent: Yandex
+Disallow: /admin/
+Disallow: /search
+Disallow: /*gclid=*
+Clean-param: tracking
+Host: https://riomebel.kz/
+Sitemap: https://riomebel.kz//sitemap.xml

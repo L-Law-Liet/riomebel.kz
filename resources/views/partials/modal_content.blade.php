@@ -37,7 +37,7 @@ foreach ($carts as $item){
             @foreach(json_decode($product->images) as $image)
                 <div>
                     <div class="item">
-                        <img src="{{asset('storage/'.$image)}}">
+                        <img  alt="{{$product->name}}" src="{{asset('storage/'.$image)}}">
                     </div>
                 </div>
             @endforeach

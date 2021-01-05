@@ -5,7 +5,7 @@
 		@foreach ($carts as $item)
 		<li class="item">
 			<div class="img">
-				<img src="@if($item->associatedModel->image) /storage/{{$item->associatedModel->image}} @else/images/default.jpg @endif">
+				<img alt="{{$item->name}}" src="@if($item->associatedModel->image) /storage/{{$item->associatedModel->image}} @else/images/default.jpg @endif">
 			</div>
 			<a href="" class="text">
 				<p class="name">

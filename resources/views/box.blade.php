@@ -27,7 +27,8 @@ $sale =  $new_price - $old_price;
 							@foreach ($carts as $item)
 							<li class="tr">
 								<div class="img">
-									<img src="@if($item->associatedModel->image) /storage/{{$item->associatedModel->image}} @else/images/default.jpg @endif">
+									<img  alt="{{$item->name}}"
+                                        src="@if($item->associatedModel->image) /storage/{{$item->associatedModel->image}} @else/images/default.jpg @endif">
 								</div>
 								<div class="name">
 									<a href="{{route('product', $item->associatedModel->slug)}}">{{$item->name}}</a>

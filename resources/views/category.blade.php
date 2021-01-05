@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 	<div class="container">
-		@include('partials.breadcrumbs' , ['name' => $title , 'ancestors' => null])
+		@include('partials.breadcrumbs' , ['name' => $title , 'ancestors' => $ancestors??[]])
 		<div class="row">
 			<div class="col-12">
 				@include('partials.tab_mobile_category')

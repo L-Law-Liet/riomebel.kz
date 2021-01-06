@@ -16,7 +16,7 @@
 				</p>
 			</span>
 			<button class="delete remove-cart" product-id="{{ $item->id }}">
-				<img src="/images/icons/close.svg">
+				<img alt="close" src="/images/icons/close.svg">
 			</button>
 		</li>
 		@endforeach

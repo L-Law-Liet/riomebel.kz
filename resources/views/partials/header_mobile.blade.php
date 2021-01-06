@@ -3,7 +3,7 @@
 		<section class="header_top">
 			<div class="menu_wrap">
 				<button class="menu mobile_menu_btn">
-					<img src="/images/icons/menu_b.svg">
+					<img alt="menu" src="/images/icons/menu_b.svg">
 				</button>
 				<ul class="menu_mobile">
 					<li>
@@ -26,16 +26,16 @@
 
 			<div class="logo">
 				<a href="/">
-					<img src="/images/logo.png">
+					<img alt="logo" src="/images/logo.png">
 				</a>
 			</div>
 
 			<div class="contacts">
 				<button class="contact_btn mobile_contacts_btn">
-					<img src="/images/icons/phone.svg">
+					<img alt="phone" src="/images/icons/phone.svg">
 				</button>
 				<div class="menu_contacts_mobile">
-					<button class="close"><img src="/images/icons/close_b.svg"></button>
+					<button class="close"><img alt="close" src="/images/icons/close_b.svg"></button>
                     <form action="{{ route('changeCity') }}" method="post">
                         @csrf
                         <select class="selectpicker select-inputs" name="city" onchange="this.form.submit()">
@@ -74,15 +74,15 @@
 			<form class="search-wrap" action="{{ route('search') }}" method="GET">
 				<div class="form-group">
 					<input type="text" name="search" class="form-control search_header" placeholder="Поиск по товарам..." value="{{ $q ?? '' }}">
-					<button type="submit" class="icon"> <img src="{{asset('images/icons/search.svg')}}"> </button>
+					<button type="submit" class="icon"> <img alt="search" src="{{asset('images/icons/search.svg')}}"> </button>
 				</div>
 			</form>
 
 			<a href="{{route('favorite')}}" class="header_btn wishlist">
-				<img src="{{asset('images/icons/heart.svg')}}">
+				<img alt="heart" src="{{asset('images/icons/heart.svg')}}">
 			</a>
 			<a href="{{ route('box') }}" class="header_btn box">
-				<img src="{{asset('images/icons/supermarket.svg')}}">
+				<img alt="store" src="{{asset('images/icons/supermarket.svg')}}">
                 <span class="count count-product">{{$carts->count()}}</span>
 			</a>
 		</div>

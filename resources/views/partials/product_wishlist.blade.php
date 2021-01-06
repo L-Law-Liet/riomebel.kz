@@ -36,9 +36,9 @@ foreach ($carts as $item){
     </button>
     @endif
     <button class="zoom btn-modal-product" product-id="{{ $product->id }}">
-        <img src="/images/icons/search_white.svg">
+        <img alt="search" src="/images/icons/search_white.svg">
     </button>
-    <a href="" class="img">
+    <a class="img">
         <img alt="{{$product->name}}" src="@if($product->associatedModel->image) /storage/{{$product->associatedModel->image}} @else/images/default.jpg @endif">
     </a>
     <a href="{{route('product', $product->associatedModel->slug)}}">

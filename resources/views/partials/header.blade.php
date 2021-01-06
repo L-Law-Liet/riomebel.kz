@@ -26,7 +26,7 @@
 		<div class="container">
 			<div class="bottom_header">
 				<a href="/" class="logo">
-					<img src="{{asset('images/logo.png')}}">
+					<img alt="logo" src="{{asset('images/logo.png')}}">
 				</a>
 				<form action="{{ route('changeCity') }}" method="post">
 					@csrf
@@ -45,7 +45,7 @@
 
                 <div class="menu-item dropdown categories">
                     <button class="dropdown-toggle btn-main btn_categories" data-toggle="dropdown">
-						<img src="{{asset('images/icons/bur.svg')}}">
+						<img alt="category" src="{{asset('images/icons/bur.svg')}}">
 						КАТЕГОРИИ
                     </button>
                     <ul class="dropdown-menu">
@@ -69,18 +69,18 @@
 				<form class="search-wrap" action="{{ route('search') }}" method="GET">
 					<div class="form-group">
 						<input type="text" name="search" class="form-control search_header" placeholder="Поиск по товарам..." value="{{ $q ?? '' }}">
-						<button type="submit" class="icon"> <img src="{{asset('images/icons/search.svg')}}"> </button>
+						<button type="submit" class="icon"> <img alt="search" src="{{asset('images/icons/search.svg')}}"> </button>
 					</div>
 				</form>
 
 				<a href="{{ route('favorite') }}" class="header_btn wishlist">
-					<img src="{{asset('images/icons/heart.svg')}}">
+					<img alt="heart" src="{{asset('images/icons/heart.svg')}}">
 					<span class="title">Избранное</span>
 				</a>
 
 				<div class="wrap_box">
 					<a href="{{ route('box') }}" class="header_btn">
-						<img src="{{asset('images/icons/supermarket.svg')}}">
+						<img alt="store" src="{{asset('images/icons/supermarket.svg')}}">
 						<span class="title">Корзина</span>
 						<span class="count count-product">{{$carts->count()}}</span>
 					</a>

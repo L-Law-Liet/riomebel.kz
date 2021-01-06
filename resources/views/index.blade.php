@@ -129,21 +129,21 @@
                         </p>
                         <ul class="services">
                             <li class="item">
-                                <img class="lazy" src="/images/icons/delivery.svg">
+                                <img alt="delivery" class="lazy" src="/images/icons/delivery.svg">
                                 <p class="title">
                                     ДОСТАВКА
                                 </p>
                                 <span class="subtitle">Доставим товар до Вашей двери</span>
                             </li>
                             <li class="item">
-                                <img class="lazy" src="/images/icons/ust.svg">
+                                <img alt="install" class="lazy" src="/images/icons/ust.svg">
                                 <p class="title">
                                     УСТАНОВКА
                                 </p>
                                 <span class="subtitle">Соберем и установим Вашу мебель</span>
                             </li>
                             <li class="item">
-                                <img class="lazy" src="/images/icons/support.svg">
+                                <img alt="support" class="lazy" src="/images/icons/support.svg">
                                 <p class="title">
                                     КОНСУЛЬТАЦИЯ
                                 </p>

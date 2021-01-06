@@ -10,7 +10,7 @@
 	   	@endforeach
    	@endif
 	<li>
-		<a href="" class="link">
+		<a href="{{url()->current()}}" class="link">
 			{{ $name }}
 		</a>
 	</li>

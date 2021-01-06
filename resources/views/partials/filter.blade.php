@@ -2,7 +2,7 @@
     <form>
 <div class="category_title">
 	<h2 class="title">{{$title}}</h2>
-	<button type="reset" id="reset_filter" class="remove_filter">Сбросить фильтры <img src="/images/icons/close_grey.svg"></button>
+	<button type="reset" id="reset_filter" class="remove_filter">Сбросить фильтры <img alt="close" src="/images/icons/close_grey.svg"></button>
 </div>
 <div class="filter">
 	<div class="custom-control custom-checkbox has_checkbox activity">
@@ -92,7 +92,7 @@
 		<div class="dropdown filter_item">
 		  	<button class="btn dropdown-toggle" type="button" id="sortFilter" data-toggle="dropdown">
 		    	Сортировка
-		    	<img src="/images/icons/sort.svg">
+		    	<img alt="sort" src="/images/icons/sort.svg">
 		  	</button>
 		  	<div class="dropdown-menu slideIn"  aria-labelledby="sortFilter">
 		    	<div class="filter_sort">

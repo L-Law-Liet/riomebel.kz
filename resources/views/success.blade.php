@@ -5,7 +5,7 @@
 	</div>
 	<div class="success_wrap">
 		<div class="content">
-			<img src="/images/icons/success_arr.svg">
+			<img alt="success" src="/images/icons/success_arr.svg">
 			<span class="title">Оплата успешно завершена!</span>
             <span>{{ $order->payment }}</span>
             <span>Номер заказа: №{{ $order->id }}</span>

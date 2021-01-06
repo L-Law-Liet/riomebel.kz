@@ -3,19 +3,27 @@
   <component name="ChangeListManager">
     <list default="true" id="265dd9a9-b3ab-44d7-ac02-1e818b130411" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/D_/Open Server/domains/nidge/rio3/storage/logs/laravel.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/rio/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/rio/cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/rio/wishlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/rio/wishlist.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/404.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/404.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/box.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/box.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/favorite.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/favorite.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/partials/basket.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/basket.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/modal_content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/modal_content.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/box_lists.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/box_lists.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/box_lists_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/box_lists_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/breadcrumbs.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/breadcrumbs.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/email.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/filter.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/filter.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/header_mobile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/header_mobile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/modal_city.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/modal_city.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/modal_products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/modal_products.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/paginate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/paginate.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/partials/product_card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/product_card.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/partials/product_wishlist.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/product_wishlist.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/tab_mobile_category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/tab_mobile_category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/wishlist_lists.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/wishlist_lists.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/search.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/success.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/success.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +221,7 @@
       <workItem from="1609865663208" duration="6322000" />
       <workItem from="1609904920940" duration="6046000" />
       <workItem from="1609915051887" duration="2612000" />
-      <workItem from="1609929174052" duration="3132000" />
+      <workItem from="1609929174052" duration="6300000" />
     </task>
     <servers />
   </component>

@@ -2,7 +2,7 @@
     <div class="modal-dialog modal-dialog-centered city" role="document">
         <div class="modal-content city">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <img src="/images/icons/close_grey.svg">
+                <img alt="close" src="/images/icons/close_grey.svg">
             </button>
             <div class="modal_city">
                 <span class="title">Здравствуйте</span>

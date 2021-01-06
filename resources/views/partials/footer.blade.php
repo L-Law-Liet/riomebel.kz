@@ -9,7 +9,7 @@ $oskemen = \App\City::find(2);
 				<div class="logo_footer_wrap">
 					<div class="logo_footer">
 						<a href="/" class="img">
-							<img src="/images/logo.png">
+							<img alt="logo" src="/images/logo.png">
 						</a>
 						<a href="/" class="title">Интернет-магазин “РиО”</a>
 					</div>

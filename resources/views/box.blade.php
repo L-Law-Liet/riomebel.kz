@@ -50,7 +50,7 @@ $sale =  $new_price - $old_price;
 									<span class="item total_box">{{ number_format($total, 0, "", " ") }} </span><span> ₸</span>
 								</div>
 								<button class="delete remove-cart" product-id="{{ $item->id }}">
-									<img src="/images/icons/delete.svg">
+									<img alt="delete" src="/images/icons/delete.svg">
 								</button>
 							</li>
 							@endforeach

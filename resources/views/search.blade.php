@@ -12,14 +12,14 @@
 				<div class="row">
                     @foreach ($products as $item)
     				<div class="col-6 col-md-3">
-                        @include('partials.product_card', ['product' => $item]) 
+                        @include('partials.product_card', ['product' => $item])
     				</div>
                     @endforeach
     	       </div>
             @else
 			<div class="favorite_products_empty">
 				<p>По вашему запросу ничего не найдено</p>
-				<a href="">Перейти в каталог</a>
+				<a href="{{route('welcome')}}">Перейти в каталог</a>
 			</div>
             @endif
 		</div>

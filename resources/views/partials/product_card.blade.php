@@ -37,7 +37,7 @@ foreach ($carts as $item){
     </button>
     @endif
     <button class="zoom btn-modal-product" product-id="{{ $product->id }}" >
-        <img src="{{asset('images/icons/search_white.svg')}}">
+        <img alt="search" src="{{asset('images/icons/search_white.svg')}}">
     </button>
     <a href="{{url('product', $product->slug)}}" class="img">
         <img class="lazy horizContainer" alt="{{$product->name}}"

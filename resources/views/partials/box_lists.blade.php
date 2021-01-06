@@ -6,7 +6,7 @@
 			<img alt="{{$item->name}}" src="@if($item->associatedModel->image) /storage/{{$item->associatedModel->image}} @else/images/default.jpg @endif">
 		</div>
 		<div class="name">
-			<a href="">{{$item->name}}</a>
+			<span>{{$item->name}}</span>
 		</div>
 		<div class="price">
 			<span>{{number_format($item->price, 0, "", " ")}} ₸ </span>
@@ -26,7 +26,7 @@
 			<span class="item"> </span><span> ₸</span>
 		</div>
 		<button class="delete remove-cart" product-id="{{ $item->id }}">
-			<img src="/images/icons/delete.svg">
+			<img alt="delete" src="/images/icons/delete.svg">
 		</button>
 	</li>
 	@endforeach
@@ -34,7 +34,7 @@
 @else
 <div class="box_products_empty">
 	<p>В Вашей корзине пока нет товаров </p>
-	<a href="">Перейти в каталог</a>
+	<span>Перейти в каталог</span>
 </div>
 @endif
 

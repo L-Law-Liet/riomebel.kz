@@ -23,17 +23,17 @@ foreach ($carts as $item){
         </div>
     @endif
     @if ($fav)
-    <a
+    <button
         product-id="{{ $product->id }}"
         qty="1"
         class="favorite add-wishlist">
-    </a>
+    </button>
     @else
-     <a
+     <button
         product-id="{{ $product->id }}"
         qty="1"
         class="favorite remove-wishlist active el-clickable">
-    </a>
+    </button>
     @endif
     <button class="zoom btn-modal-product" product-id="{{ $product->id }}">
         <img src="/images/icons/search_white.svg">
@@ -61,13 +61,13 @@ foreach ($carts as $item){
         </div>
 
         @if ($in_box)
-        <a  class="btn-main box-btn add-cart el-clickable"
+        <button  class="btn-main box-btn add-cart el-clickable"
             product-id="{{ $product->id }}"
-            qty="1">В корзину</a>
+            qty="1">В корзину</button>
         @else
-        <a  class="btn-main box-btn remove-cart grey el-clickable"
+        <button  class="btn-main box-btn remove-cart grey el-clickable"
             product-id="{{ $product->id }}"
-            qty="1">В корзинe</a>
+            qty="1">В корзинe</button>
         @endif
 
         <button class="btn-main more btn-modal-product" product-id="{{ $product->id }}">Подробнее</button>

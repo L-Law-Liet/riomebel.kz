@@ -4,7 +4,7 @@
 		<div class="content error">
 			<img src="/images/icons/404.svg">
 			<span class="title">Упс... А такой страницы у нас нет!</span>
-			<a href="" class="btn-main">Вернуться на главную</a>
+			<a href="{{route('welcome')}}" class="btn-main">Вернуться на главную</a>
 		</div>
 	</div>
 @endsection

@@ -58,7 +58,7 @@ $sale =  $new_price - $old_price;
 					@else
 						<div class="box_products_empty">
 							<p>В Вашей корзине пока нет товаров </p>
-							<a href="">Перейти в каталог</a>
+							<a href="{{route('welcome')}}">Перейти в каталог</a>
 						</div>
 					@endif
 				</div>

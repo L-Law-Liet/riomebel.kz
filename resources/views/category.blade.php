@@ -18,3 +18,6 @@
 		</div>
 	</div>
 @endsection
+@section('after_jquery')
+    <script type="text/javascript" src="{{ asset('js/rio/ajax.js') }}"></script>
+@endsection

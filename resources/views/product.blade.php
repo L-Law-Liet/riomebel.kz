@@ -26,17 +26,17 @@
                     <div class="name">
                        <span class="title">{{$product->name??''}}</span>
                         @if ($fav)
-                            <a
+                            <button
                                 product-id="{{ $product->id }}"
                                 qty="1"
                                 class="favorite add-wishlist el-clickable">
-                            </a>
+                            </button>
                         @else
-                            <a
+                            <button
                                 product-id="{{ $product->id }}"
                                 qty="1"
                                 class="favorite remove-wishlist active el-clickable">
-                            </a>
+                            </button>
                         @endif
                     </div>
                     <span class="artikul">Артикул: {{$product->articule??'Не указано'}}</span>
@@ -83,17 +83,17 @@
                     <div class="name">
                        <span class="title">{{$product->name??''}}</span>
                         @if ($fav)
-                            <a
+                            <button
                                 product-id="{{ $product->id }}"
                                 qty="1"
                                 class="favorite add-wishlist el-clickable">
-                            </a>
+                            </button>
                         @else
-                            <a
+                            <button
                                 product-id="{{ $product->id }}"
                                 qty="1"
                                 class="favorite remove-wishlist active el-clickable">
-                            </a>
+                            </button>
                         @endif
                     </div>
                     <span class="artikul">Артикул: {{$product->articule??''}}</span>
@@ -161,13 +161,13 @@
 
 					<div class="product_page buttons_mobile">
                         @if ($in_box)
-                            <a  class="btn-main box-btn add-cart"
+                            <button  class="btn-main box-btn add-cart"
                                 product-id="{{ $product->id }}"
-                                qty="1">В корзину</a>
+                                qty="1">В корзину</button>
                         @else
-                            <a  class="btn-main box-btn remove-cart grey"
+                            <button  class="btn-main box-btn remove-cart grey"
                                 product-id="{{ $product->id }}"
-                                qty="1">В корзинe</a>
+                                qty="1">В корзинe</button>
                         @endif
 {{--                		<button class="btn-main">Купить </button>--}}
                 	</div>
@@ -210,13 +210,13 @@
 	                </div>
 	                <span class="price_product_page">{{number_format($product->new_price, 0, "", " ")??''}} тг.</span>
                     @if ($in_box)
-                        <a  class="btn-main box-btn el-clickable add-cart"
+                        <button  class="btn-main box-btn el-clickable add-cart"
                             product-id="{{ $product->id }}"
-                            qty="1">В корзину</a>
+                            qty="1">В корзину</button>
                     @else
-                        <a  class="btn-main box-btn remove-cart grey"
+                        <button  class="btn-main box-btn remove-cart grey"
                             product-id="{{ $product->id }}"
-                            qty="1">В корзинe</a>
+                                 qty="1">В корзинe</button>
                     @endif
 
            	 	</form>

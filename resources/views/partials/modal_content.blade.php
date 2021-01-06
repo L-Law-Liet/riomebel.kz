@@ -20,9 +20,9 @@ foreach ($carts as $item){
     <div class="name">
        <span class="title">{{ $product->name }}</span>
         @if ($fav)
-        <a class="favorite add-wishlist" qty="1" product-id="{{ $product->id }}"></a>
+        <button class="favorite add-wishlist" qty="1" product-id="{{ $product->id }}"></button>
         @else
-        <a class="favorite remove-wishlist active" qty="1" product-id="{{ $product->id }}"></a>
+        <button class="favorite remove-wishlist active" qty="1" product-id="{{ $product->id }}"></button>
         @endif
     </div>
     <span class="artikul">Артикул {{$product->articul??'Не указано'}}</span>
@@ -55,9 +55,9 @@ foreach ($carts as $item){
         <div class="name">
            <span class="title">{{ $product->name }}</span>
             @if ($fav)
-            <a class="favorite add-wishlist el-clickable" qty="1" product-id="{{ $product->id }}"></a>
+            <button class="favorite add-wishlist el-clickable" qty="1" product-id="{{ $product->id }}"></button>
             @else
-            <a class="favorite remove-wishlist active el-clickable" qty="1" product-id="{{ $product->id }}"></a>
+            <button class="favorite remove-wishlist active el-clickable" qty="1" product-id="{{ $product->id }}"></button>
             @endif
         </div>
         <span class="artikul">Артикул {{$product->articul??'Не указано'}}</span>
@@ -72,15 +72,15 @@ foreach ($carts as $item){
     </ul>
     <div class="buttons">
         @if ($in_box)
-        <a  href=""
+        <button
             class="btn-main box-btn add-cart"
             product-id="{{ $product->id }}"
-            qty="1">В корзину</a>
+            qty="1">В корзину</button>
         @else
-        <a  href=""
+        <button
             class="btn-main box-btn remove-cart grey"
             product-id="{{ $product->id }}"
-            qty="1">В корзинe</a>
+            qty="1">В корзинe</button>
         @endif
         <a href="{{ route('product', $product->slug) }}" class="btn-border">Подробнее</a>
     </div>

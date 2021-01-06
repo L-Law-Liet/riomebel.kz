@@ -16,14 +16,14 @@ $wish_lists = app('wishlist')->getContent();
 				<div class="row">
                     @foreach ($wish_lists as $item)
     				<div class="col-6 col-md-3">
-                        @include('partials.product_wishlist', ['product' => $item]) 
+                        @include('partials.product_wishlist', ['product' => $item])
     				</div>
                     @endforeach
     	       </div>
             @else
 			<div class="favorite_products_empty">
 				<p>В избранном пока ничего нет</p>
-				<a href="">Перейти в каталог</a>
+				<a href="{{route('welcome')}}">Перейти в каталог</a>
 			</div>
             @endif
 		</div>

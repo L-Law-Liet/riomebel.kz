@@ -20,8 +20,8 @@ $('body').on('click', '.add-cart', function (e) {
             $('.cart-html').html(reponse.cart_list);
             $('.box-html').html(reponse.box_list);
             $('.total-box').text(reponse.total);
-            $(`a.box-btn[product-id="${product_id}"]`).removeClass("add-cart").addClass("remove-cart grey");
-            $(`a.box-btn[product-id="${product_id}"]`).text('В корзинe');
+            $(`button.box-btn[product-id="${product_id}"]`).removeClass("add-cart").addClass("remove-cart grey");
+            $(`button.box-btn[product-id="${product_id}"]`).text('В корзинe');
             $('.count-product').text(reponse.count);
         }
     });
@@ -40,8 +40,8 @@ $('body').on('click', '.remove-cart', function (e) {
             $('.cart-html').html(reponse.cart_list);
             $('.box-html').html(reponse.box_list);
             $('.total-box').text(reponse.total);
-            $(`a.box-btn[product-id="${product_id}"]`).removeClass("remove-cart grey").addClass("add-cart");
-            $(`a.box-btn[product-id="${product_id}"]`).text('В корзину');
+            $(`button.box-btn[product-id="${product_id}"]`).removeClass("remove-cart grey").addClass("add-cart");
+            $(`button.box-btn[product-id="${product_id}"]`).text('В корзину');
             $('.count-product').text(reponse.count);
             $('.old-price').text(reponse.old_price);
             $('.sale-product').text(reponse.sale);
@@ -80,7 +80,7 @@ $('body').on('click', '.update-cart-remove', function (e) {
     e.preventDefault();
     let row_id = $(this).attr('row-id');
     let qty = $(this).attr('qty');
-    
+
     clearTimeout(timer);
     timer = setTimeout(function () {
         $.ajax({
@@ -139,7 +139,7 @@ $('body').on('click', '.btn-modal-product', function (e) {
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 arrows: true,
-                dots: false, 
+                dots: false,
                 responsive: [
                 {
                   breakpoint: 768,

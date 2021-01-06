@@ -7,14 +7,14 @@
 			<div class="img">
 				<img alt="{{$item->name}}" src="@if($item->associatedModel->image) /storage/{{$item->associatedModel->image}} @else/images/default.jpg @endif">
 			</div>
-			<a href="" class="text">
+			<span class="text">
 				<p class="name">
 					{{$item->name}}
 				</p>
 				<p class="price">
 					{{number_format($item->price, 0, "", " ")}} тг.
 				</p>
-			</a>
+			</span>
 			<button class="delete remove-cart" product-id="{{ $item->id }}">
 				<img src="/images/icons/close.svg">
 			</button>

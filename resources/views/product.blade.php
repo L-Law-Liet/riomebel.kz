@@ -151,7 +151,7 @@
 					  </div>
 					  <div class="tab-pane fade" id="product_delivery" role="tabpanel">
 					  	<ul class="product_lists">
-					  		<li><p>Доставка по г. Алматы осуществляется в течение 1 дня</p></li>
+					  		<li><p>Доставка по г. {{\App\City::find(session()->get('city_id'))->name??'Алматы'}} осуществляется в течение 1 дня</p></li>
 					  		<li><p>Доставка по области осуществляется в течении 3 дней</p></li>
 					  		<li><p>Сборка и подъём на любой этаж бесплатно</p></li>
 					  	</ul>

@@ -8,7 +8,7 @@
     <title>{{$seo->title??$seo_title??$title??setting('site.title')}}</title>
     <meta name="description" content="{{$seo->description??strip_tags((isset($description)) ? $description : setting('site.description')) }}">
     <meta name="keywords" content="{{$seo->keywords??setting('site.keyword') }}">
-    <link rel="preload" as="image" type="image/png" href="{{ asset("storage/". setting('site.logo')) }}">
+    <link rel="icon" type="image/png" href="{{ asset("storage/". setting('site.logo')) }}">
     <!-- fonts -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.css">
@@ -32,6 +32,7 @@
     @include('partials.header')
     @include('partials.header_mobile')
     @yield('content')
+    @include('layouts.text')
 
     @include('partials.footer')
 
@@ -67,7 +68,7 @@
             $(document).ready(function () {
                 setTimeout(function () {
                     $('#city-modal').modal('show');
-                }, 60000);
+                }, 5000);
             });
         </script>
         @endif

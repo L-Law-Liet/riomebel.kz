@@ -31,21 +31,21 @@ class ProductController extends Controller
         $page = 1;
         $ancestors = [];
         if ($subcategory_slug){
-            $subcategory_id = SubCategory::where('slug', $subcategory_slug)->first()->id;
+            $subcategory_id = SubCategory::where('slug', $subcategory_slug)->firstOrFail()->id;
             $ancestors[] = (object)
             [
                 'name' => Category::findOrFail($category_id)->name,
                 'link' => route('category', $category_slug.'?page=1')
             ];
-            $title = SubCategory::where('slug', $subcategory_slug)->first()->name;
+            $title = SubCategory::where('slug', $subcategory_slug)->firstOrFail()->name;
             $seo_title = "Купить $title в Алматы и Казахстане по лучшей цене с гарантией и доставкой | Интернет-магазин RioMebel.kz";
             $data['products'] = $products->where('subcategory_id', $subcategory_id)->paginate(12);
             return view('category', compact('category_id', 'subcategory_id', 'page', 'title', 'ancestors', 'seo_title'), $data);
         }
         else {
-            $title = Category::where('slug', $category_slug)->first()->name;
+            $title = Category::where('slug', $category_slug)->firstOrFail()->name;
             $seo_title = "【 $title 】100% наличие товара :airplane: Доставка по Алматы и Усть-Каменогорску ➤  Гарантия качества. Интернет-магазин «RioMebel.kz» №1 в Алматы ✓ Звоните :phone:: +7 (771) 410-12-26";
-            $data['products'] = $products->whereIn('subcategory_id', Category::where('slug', $category_slug)->first()->subcategory->pluck('id'))->paginate(12);
+            $data['products'] = $products->whereIn('subcategory_id', Category::where('slug', $category_slug)->firstOrFail()->subcategory->pluck('id'))->paginate(12);
             return view('category', compact('category_id', 'page', 'title', 'ancestors', 'seo_title'), $data);
         }
 

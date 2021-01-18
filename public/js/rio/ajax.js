@@ -18,7 +18,6 @@ function ajaxFilter(reset, page) {
     else {
         urL = phpUrl+'?page='+phpPage;
     }
-    console.log('--------', arr);
     $.ajax({
         type : 'get',
         url : urL,
@@ -33,9 +32,7 @@ $('#reset_filter').on('click', function () {
     ajaxFilter(1, -1);
 });
 $('.ajax-filter').on('keyup', function (e) {
-    console.log('353223232');
     if (e.target.name == 'from' || e.target.name == 'till') {
-        console.log('111111111');
         clearTimeout(ajaxPriceTimer);
         ajaxPriceTimer = setTimeout(ajaxFilter(2, -1), 1000);
     }
@@ -49,13 +46,13 @@ $(document).ready(function () {
     $(document).on('click', '.pagination a', function (e) {
         e.preventDefault();
         let page = $(this).attr('href').split('page=')[1];
-        console.log(page);
 
         let ref = document.location+"";
-        let param = ref.
-        slice(0, -parseInt(document.location.search.
-        substring(document.location.search.
-        lastIndexOf("=")+1).length))+page;
+        if (ref.includes('?page=')){
+            ref = ref.substring(0, ref.indexOf("?page="));
+        }
+        let param = ref+'?page='+page;
+
         window.history.pushState("object or string", "Title", param);
         ajaxFilter(3, page);
 

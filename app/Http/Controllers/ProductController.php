@@ -35,7 +35,7 @@ class ProductController extends Controller
             $ancestors[] = (object)
             [
                 'name' => Category::findOrFail($category_id)->name,
-                'link' => route('category', $category_slug.'?page=1')
+                'link' => route('category', $category_slug)
             ];
             $title = SubCategory::where('slug', $subcategory_slug)->firstOrFail()->name;
             $seo_title = "Купить $title в Алматы и Казахстане по лучшей цене с гарантией и доставкой | Интернет-магазин RioMebel.kz";

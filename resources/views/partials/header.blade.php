@@ -51,11 +51,11 @@
                     <ul class="dropdown-menu">
                         @foreach(\App\Category::all() as $category)
                             <li class="menu-item dropdown dropdown-submenu">
-                                <a href="{{route('category', $category->slug.'?page=1')}}" class="dropdown-toggle link-btn">{{$category->name}}</a>
+                                <a href="{{route('category', $category->slug)}}" class="dropdown-toggle link-btn">{{$category->name}}</a>
                                 <ul class="dropdown-menu">
                               @foreach($category->subcategory as $subcategory)
                                         <li class="menu-item">
-                                            <a href="{{route('category', [$category->slug, $subcategory->slug.'?page=1'])}}" class="link-btn">{{$subcategory->name}}</a>
+                                            <a href="{{route('category', [$category->slug, $subcategory->slug])}}" class="link-btn">{{$subcategory->name}}</a>
                                         </li>
                                   @endforeach
                                 </ul>

@@ -42,9 +42,6 @@ class Product extends Model
     {
         return $this->belongsTo('App\Manufactor');
     }
-    function setSlugAttribute(){
-        $this->attributes['slug'] = Str::slug($this->name, '_').'_'.random_int(10, 99);
-    }
     public function getResizedImageAttribute()
     {
        $pattern = '/(\w+)\/(\w+)\/(\w+).(\w+)/i';

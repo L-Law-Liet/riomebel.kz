@@ -162,6 +162,7 @@
 					<div class="product_page buttons_mobile">
                         @if ($in_box)
                             <button  class="btn-main box-btn add-cart"
+                                     style="border: none"
                                 product-id="{{ $product->id }}"
                                 qty="1">В корзину</button>
                         @else
@@ -211,6 +212,7 @@
 	                <span class="price_product_page">{{number_format($product->new_price, 0, "", " ")??''}} тг.</span>
                     @if ($in_box)
                         <button  class="btn-main box-btn el-clickable add-cart"
+                                 style="border: none"
                             product-id="{{ $product->id }}"
                             qty="1">В корзину</button>
                     @else

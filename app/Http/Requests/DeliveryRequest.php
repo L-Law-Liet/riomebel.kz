@@ -26,7 +26,7 @@ class DeliveryRequest extends FormRequest
         return [
             'name' => 'required',
             'phone' => 'required',
-            'email' => 'required',    
+            'email' => 'required|email',
         ];
     }
 
@@ -36,6 +36,7 @@ class DeliveryRequest extends FormRequest
             'name.required' => 'Введите поле Ф.И.О',
             'phone.required' => 'Введите номер телефона',
             'email.required' => 'Введите поле email',
+            'email.email' => 'Неверный email',
        ];
     }
 }

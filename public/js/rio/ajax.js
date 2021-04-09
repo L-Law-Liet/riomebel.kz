@@ -51,9 +51,10 @@ $(document).ready(function () {
         if (ref.includes('?page=')){
             ref = ref.substring(0, ref.indexOf("?page="));
         }
-        let param = ref+'?page='+page;
+        if(page != 1)
+            ref = ref+'?page='+page;
 
-        window.history.pushState("object or string", "Title", param);
+        window.history.pushState("object or string", "Title", ref);
         ajaxFilter(3, page);
 
     });

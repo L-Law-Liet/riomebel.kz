@@ -80,16 +80,16 @@ class CheckoutController extends Controller
     public function delivery(DeliveryRequest $request)
     {
 		$adress = "";
-		if($request->has('street')){
+		if($request->street){
 			$adress .= "$request->street";
 		}
-        if ($request->has('home')){
+        if ($request->home){
            $adress .= ", $request->home";
         }
-		if($request->has('flat')){
+		if($request->flat){
 			$adress .= ", $request->flat";
 		}
-        if ($request->has('city')){
+        if ($request->city){
                $city = City::where('id', '=', $request->city)->first()->name;
         } else{
             $city = '';
@@ -124,7 +124,9 @@ class CheckoutController extends Controller
             \Cart::remove($product->id);
             $order_item->save();
         }
-
+        if (is_null($order->total) || $order->total < 1){
+            return redirect()->back();
+        }
         if ($request->payment == 'card')
         {
             $client = new Client();
@@ -144,8 +146,10 @@ class CheckoutController extends Controller
                     'form_params' => $data
                 ]);
 
-
             $res = json_decode($req->getBody()->getContents(), true);
+            if (isset($res['errorCode'])){
+                return redirect()->back();
+            }
             $order->sberbank_order_id = $res['orderId'];
             $order->save();
 

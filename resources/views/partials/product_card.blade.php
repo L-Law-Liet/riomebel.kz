@@ -17,7 +17,7 @@ foreach ($carts as $item){
 @endphp
 
 
- <div class="product_item">
+ <div class="product_item" style="height: 425px">
     @if ($product->discount != null)
         <div class="sale">
             {{$product->discount}} %

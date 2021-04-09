@@ -24,7 +24,7 @@ class BidController extends Controller
         $validator = Validator::make($request->all(), [
         'name' => 'required',
         'phone' => 'required',
-        'file' => 'mimes:jpeg,jpg,png,gif|required|max:10000'// max 10000kb
+        'file' => 'mimes:jpeg,jpg,png,gif|max:10000'// max 10000kb
         ],$messages);
 
         if ($validator->fails()) {
@@ -32,6 +32,7 @@ class BidController extends Controller
                     ->withErrors($validator)
                     ->withInput();
         }
+        $path = "";
         if ($request->has('file')) {
 			$path = $request->file('file')->store('files');
 			$path = 'app/'.$path;

@@ -1,7 +1,7 @@
 <section id="filter">
     <form>
 <div class="category_title">
-	<h2 class="title">{{$title}}</h2>
+	<h1 class="title">{{$title}}</h1>
 	<button type="reset" id="reset_filter" class="remove_filter">Сбросить фильтры <img alt="close" src="/images/icons/close_grey.svg"></button>
 </div>
 <div class="filter">

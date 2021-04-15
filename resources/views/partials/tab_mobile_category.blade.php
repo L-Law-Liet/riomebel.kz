@@ -1,6 +1,6 @@
 <div class="tab_mobile_category">
 	<div class="category_title">
-		<h3 class="title">{{$title}}</h3>
+		<h1 class="title">{{$title}}</h1>
 	</div>
 
 	<ul class="nav nav-pills mb-3">

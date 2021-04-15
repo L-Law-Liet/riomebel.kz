@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{$seo->title??$seo_title??$title??setting('site.title')}}</title>
-    <meta name="description" content="{{$seo->description??strip_tags((isset($description)) ? $description : setting('site.description')) }}">
-    <meta name="keywords" content="{{$seo->keywords??setting('site.keyword') }}">
+    @stack('seo_head')
     <link rel="icon" type="image/png" href="{{ asset("storage/". setting('site.logo')) }}">
     <!-- fonts -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
@@ -87,6 +85,31 @@
 {{--    <script src="{{asset('js/rio/lazy-load.js')}}"></script>--}}
     @include('layouts.script')
 {{--    <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>--}}
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(75557461, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/75557461" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JW5ZVC39VM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-JW5ZVC39VM');
+    </script>
 </body>
 
 </html>

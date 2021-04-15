@@ -1,4 +1,9 @@
 @extends('layouts.app')
+@push('seo_head')
+    <title>{{$seo->title ?? (($title) ? $title : '') . " в Алматы и Усть-Каменогорске купить, цена, доставка | RioMebel.kz"}} </title>
+    <meta name="description" content="{{$seo->description ?? (($title) ? $title : '') . " 100% наличие товара ✈️ Доставка по Алматы и Усть-Каменогорску ➤ Гарантия качества. Интернет-магазин «RioMebel.kz» №1 в Алматы ✓ Звоните ☎: +7 705 722 0547"}}">
+    {{--    <meta name="keywords" content="{{$seo->keywords??setting('site.keyword') }}">--}}
+@endpush
 @section('content')
     @php
         $wish_list = app('wishlist')->getContent();
@@ -24,7 +29,7 @@
 			<div class="col-12 col-md-12">
 				<div class="title_product mobile_product_page">
                     <div class="name">
-                       <span class="title">{{$product->name??''}}</span>
+                       <h1 class="title">{{$product->name??''}}</h1>
                         @if ($fav)
                             <button
                                 product-id="{{ $product->id }}"
@@ -81,7 +86,7 @@
 				<div class="product_description-wrap">
 				<div class="title_product product_page">
                     <div class="name">
-                       <span class="title">{{$product->name??''}}</span>
+                       <h1 class="title">{{$product->name??''}}</h1>
                         @if ($fav)
                             <button
                                 product-id="{{ $product->id }}"

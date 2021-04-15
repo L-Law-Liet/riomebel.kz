@@ -1,4 +1,9 @@
 @extends('layouts.app')
+@push('seo_head')
+    <title>{{$seo->title??$seo_title??$title??setting('site.title')}}</title>
+    <meta name="description" content="{{$seo->description??strip_tags((isset($description)) ? $description : setting('site.description')) }}">
+    <meta name="keywords" content="{{$seo->keywords??setting('site.keyword') }}">
+@endpush
 @section('content')
     <section class="banner" style="background-image: url('/images/banners/banner1.webp') !important;" data-rjs="/images/banners/banner1.jpg">
         <div class="container">
